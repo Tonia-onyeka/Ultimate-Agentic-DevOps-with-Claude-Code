@@ -4,9 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a **static portfolio website** used in the **DevOps Micro Internship (DMI)** program. The site is a clean, professional HTML/CSS portfolio template that students deploy to AWS using Nginx (on-premise) or S3 + CloudFront (cloud infrastructure).
-
-The repository includes infrastructure-as-code (Terraform) and custom Claude Code skills to automate deployment workflows.
+Static HTML/CSS portfolio website deployed to AWS using S3 and CloudFront, provisioned with Terraform, and automated via GitHub Actions.
 
 ## Architecture
 
@@ -15,6 +13,7 @@ The repository includes infrastructure-as-code (Terraform) and custom Claude Cod
 - **style.css** — All styling (responsive, mobile-friendly)
 - **privacy.html** & **terms.html** — Legal pages
 - **images/** — Static assets (logos, profile pictures, etc.)
+- Pure HTML5 and CSS3. No JavaScript. No build step. No framework.
 
 ### Infrastructure & Deployment
 - **terraform/** — AWS infrastructure code (S3 bucket, CloudFront distribution)
@@ -25,6 +24,25 @@ The repository includes infrastructure-as-code (Terraform) and custom Claude Cod
   - Triggers on push to `main` branch
   - Uses AWS OIDC for authentication (no stored credentials)
   - Syncs site files to S3, invalidates CloudFront cache
+
+
+  ## Commands
+  ```Bash
+  # terraform
+  - `terraform init`    # Initialize the Terraform project
+  - `terraform plan`    # Preview the changes Terraform will make
+  - `terraform apply`   # Apply the changes
+
+  ---
+
+###  Conventions
+  - All infrastructure changes go through Terraform — never modify AWS resources manually
+  - No JavaScript in this project
+  - CSS uses mobile-first approach with breakpoints at 900px, 768px, and 600px
+
+## Safety
+  - Never put secrets in this file. No API keys, passwords, or AWS credentials.
+
 
 ### Custom Skills
 These Claude Code skills automate the deployment workflow:
