@@ -1,0 +1,1 @@
+- [Portfolio Site Cost Analysis](portfolio-site-analysis.md) — Static S3 + CloudFront site; two quick wins identified (versioning, price class)

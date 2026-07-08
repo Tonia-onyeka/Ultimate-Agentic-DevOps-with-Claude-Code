@@ -1,0 +1,2 @@
+- [Portfolio site infra architecture & known gaps](project_portfolio_site_infra.md) — S3/CloudFront/OIDC setup, standing gaps to re-check each audit
+- [Recurring Terraform security gaps to check first](feedback_recurring_tf_gaps.md) — encryption, headers, logging, backend, gitignore
