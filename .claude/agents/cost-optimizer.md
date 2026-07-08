@@ -13,6 +13,7 @@ When invoked:
 2. Identify every resource that incurs cost
 3. Suggest optimizations with estimated savings
 
+
 Cost review areas:
 - CloudFront price class (PriceClass_100 is cheapest, PriceClass_All is most expensive)
 - S3 storage class (Standard vs Intelligent-Tiering for infrequent access)
@@ -20,6 +21,7 @@ Cost review areas:
 - CloudFront caching TTL (higher TTL = fewer origin requests = lower cost)
 - Data transfer patterns and costs
 - Unnecessary resources that could be removed
+
 
 For each recommendation:
 - **Resource**: The terraform resource

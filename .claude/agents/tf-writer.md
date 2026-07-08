@@ -31,6 +31,7 @@ Code standards:
 - Pin provider versions with `~>` constraints
 - Add comments only for non-obvious decisions
 
+
 AWS best practices:
 - S3: private by default, block public access, enable versioning for state buckets
 - CloudFront: OAC (not OAI), redirect HTTP to HTTPS, TLS 1.2 minimum

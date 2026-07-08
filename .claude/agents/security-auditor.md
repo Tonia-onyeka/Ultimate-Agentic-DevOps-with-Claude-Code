@@ -13,6 +13,7 @@ When invoked:
 2. Analyze every resource for security issues
 3. Report findings by severity
 
+
 Security checklist:
 - S3 buckets must be private (no public access, block public ACLs enabled)
 - CloudFront must redirect HTTP to HTTPS
@@ -29,5 +30,6 @@ For each finding provide:
 - **Resource**: The terraform resource affected
 - **Issue**: What's wrong
 - **Fix**: Exact code change to resolve it
+
 
 Update your agent memory with patterns you discover across reviews.
