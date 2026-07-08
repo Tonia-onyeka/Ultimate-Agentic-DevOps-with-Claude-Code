@@ -29,9 +29,9 @@ Static HTML/CSS portfolio website deployed to AWS using S3 and CloudFront, provi
   ## Commands
   ```Bash
   # terraform
-  - `terraform init`    # Initialize the Terraform project
-  - `terraform plan`    # Preview the changes Terraform will make
-  - `terraform apply`   # Apply the changes
+  -  terraform init    # Initialize the Terraform project
+  -  terraform plan    # Preview the changes Terraform will make
+  -  terraform apply   # Apply the changes
 
   ---
 
