@@ -25,7 +25,7 @@ Static HTML/CSS portfolio website deployed to AWS using S3 and CloudFront, provi
   - Uses AWS OIDC for authentication (no stored credentials)
   - Syncs site files to S3, invalidates CloudFront cache
 
-
+cl
   ## Commands
   ```Bash
   # terraform
